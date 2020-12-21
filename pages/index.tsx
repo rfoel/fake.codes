@@ -1,10 +1,10 @@
 import { FunctionComponent } from 'react'
-import { Link } from 'react-router-dom'
+import Link from 'next/link'
 import styled, { css } from 'styled-components'
 
 import resources from '../utils/resources'
 
-const Anchor = styled(Link)(
+const Anchor = styled.a(
   ({ theme: { colors } }) => css`
     color: ${colors.black};
     display: block;
@@ -20,9 +20,9 @@ const Home: FunctionComponent = () => {
   return (
     <div>
       {Object.keys(resources).map(resource => (
-        <Anchor key={resource} to={`/${resource}`}>
-          {resource}
-        </Anchor>
+        <Link key={resource} href={`/${resource}`} passHref>
+          <Anchor>{resource}</Anchor>
+        </Link>
       ))}
     </div>
   )
