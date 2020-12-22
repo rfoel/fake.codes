@@ -4,7 +4,6 @@ import {
   generateCNPJ,
   generateCPF,
   getCities,
-  getStates,
 } from '@brazilian-utils/brazilian-utils'
 
 export type Resource = {
@@ -21,12 +20,12 @@ type Resources = {
 
 const resources: Resources = {
   cep(query) {
-    return new Promise(resolve => {
+    return new Promise((resolve) => {
       const cities = getCities()
       const randomQuery = cities[Math.floor(Math.random() * cities.length)]
       return fetch(`/api/cep/?query=${query || randomQuery}`)
-        .then(response => response.json())
-        .then(response =>
+        .then((response) => response.json())
+        .then((response) =>
           resolve([
             { value: response.cep },
             { value: response.logradouro },

@@ -9,7 +9,13 @@ type Address = {
   aux: string
 }
 
-const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+type ExtendedApiRequest = NextApiRequest & {
+  query: {
+    query: string
+  }
+}
+
+const handler = async (req: ExtendedApiRequest, res: NextApiResponse) => {
   const { query } = req.query
 
   const response = await fetch(`http://cep.la/${encodeURI(query)}`, {

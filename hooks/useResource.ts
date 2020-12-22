@@ -9,12 +9,17 @@ type State = {
   loading: boolean
 }
 
+type Query = {
+  query?: string
+  resource?: string
+}
+
 const useResource = (): State => {
   const router = useRouter()
   const {
     query: { query, resource },
     pathname,
-  } = router
+  }: { query: Query; pathname: string } = router
 
   const [state, setState]: [state: State, setState: any] = useState({
     loading: false,
@@ -23,21 +28,22 @@ const useResource = (): State => {
 
   const match = pathname === '/'
 
-  if (!match && !Object.keys(resources).find(r => r === resource)) {
+  if (!match && !Object.keys(resources).find((r) => r === resource)) {
     throw new Error(`resource ${resource} was not found`)
   }
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = async (): Promise<void> => {
+      if (!resource) return
       const data = await resources[resource](query)
       setState({ ...state, data })
     }
 
-    if (!match && !state.data && !state.loading) {
+    if (resource && !match && !state.data && !state.loading) {
       setState({ ...state, loading: true })
       fetchData()
     }
-  }, [query, resource, state])
+  }, [match, query, resource, state])
 
   return state
 }

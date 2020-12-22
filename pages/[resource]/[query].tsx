@@ -1,6 +1,6 @@
-import { FunctionComponent } from 'react'
-import styled from 'styled-components'
 import { NextPage } from 'next'
+import styled from 'styled-components'
+
 import Copyable from '../../components/Copyable'
 import useResource from '../../hooks/useResource'
 

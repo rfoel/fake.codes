@@ -1,4 +1,3 @@
-import { FunctionComponent } from 'react'
 import styled from 'styled-components'
 import { NextPage } from 'next'
 import Copyable from '../components/Copyable'
