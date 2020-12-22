@@ -6054,10 +6054,10 @@ react-error-boundary@^3.1.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-react-hot-toast@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-hot-toast/-/react-hot-toast-1.0.0.tgz#9b5f7ac4619b9cdd4928ae9caf73df57e70fc968"
-  integrity sha512-zzKVIa45T24hw001Kg54BpnsFxR0N132XNTTH8WX94dQjt6mDwO/fAoSt2FDEKDYz3+7t3IA9IBiCJWSYntlVA==
+react-hot-toast@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-hot-toast/-/react-hot-toast-1.0.1.tgz#1352a526545f157bc83fbc2b19ac3ad1d92e780e"
+  integrity sha512-og5MNzjNHa7BTjdThj3cwGoyD8tLoxMN9c8/Sme6bBLCnlrF54QrNOJW5gJkETTsuAHVsUK5z8Q6vvkc+9OfCg==
   dependencies:
     goober "^2.0.15"
 
