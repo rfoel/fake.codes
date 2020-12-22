@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/rfoel/fake.codes/compare/v1.1.0...v1.2.0) (2020-12-22)
+
+
+### Features
+
+* add splitbee ([43294ed](https://github.com/rfoel/fake.codes/commit/43294edc54873bb148b7e1facf6f3c8f0d521018))
+
 # [1.1.0](https://github.com/rfoel/fake.codes/compare/v1.0.0...v1.1.0) (2020-12-22)
 
 
