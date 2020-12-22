@@ -1,7 +1,7 @@
 {
   "name": "fake.codes",
   "description": "Generate random strings from selected formats",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": true,
   "license": "MIT",
   "scripts": {

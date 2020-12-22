@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/rfoel/fake.codes/compare/v1.2.0...v1.2.1) (2020-12-22)
+
+
+### Bug Fixes
+
+* add next.js proxy ([08f322a](https://github.com/rfoel/fake.codes/commit/08f322a05b7e7cc8743b7831bc90acdcbc32842c))
+
 # [1.2.0](https://github.com/rfoel/fake.codes/compare/v1.1.0...v1.2.0) (2020-12-22)
 
 
