@@ -21,19 +21,11 @@ export default class MyApp extends App {
             content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
           />
           <meta name="theme-color" content="#1b262c" />
-          <meta
-            name="description"
-            content="Generate random data from selected resources"
-          />
+          <meta name="description" content="Generate random data from selected resources" />
 
           <link rel="manifest" href="/manifest.json" />
           <link href="/favicon.png" rel="icon" type="image/png" sizes="64x64" />
-          <link
-            href="/logo192.png"
-            rel="icon"
-            type="image/png"
-            sizes="192x192"
-          />
+          <link href="/logo192.png" rel="icon" type="image/png" sizes="192x192" />
           <link rel="apple-touch-icon" href="/logo512.png"></link>
         </Head>
         <Layout>
