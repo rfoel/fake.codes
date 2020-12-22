@@ -14,9 +14,8 @@ jobs:
         with:
           node-version: 12
       - run: yarn
-      - run: yarn test
-      - run: npx eslint
-      - run: yarn run build
+      - run: yarn lint
+      - run: yarn build
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
