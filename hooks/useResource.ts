@@ -5,8 +5,8 @@ import resources, { Resource } from '../utils/resources'
 
 type State = {
   data?: Resource['data']
-  resource: Resource['resource']
   loading: boolean
+  resource: Resource['resource']
 }
 
 type Query = {
@@ -27,10 +27,6 @@ const useResource = (): State => {
   })
 
   const match = pathname === '/'
-
-  if (!match && !Object.keys(resources).find((r) => r === resource)) {
-    throw new Error(`resource ${resource} was not found`)
-  }
 
   useEffect(() => {
     const fetchData = async (): Promise<void> => {
