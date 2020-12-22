@@ -32,7 +32,7 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           {process.env.NODE_ENV === 'production' && (
-            <script async src="https://cdn.splitbee.io/sb.js"></script>
+            <script async data-api="/_hive" src="/bee.js"></script>
           )}
         </Head>
         <body>
